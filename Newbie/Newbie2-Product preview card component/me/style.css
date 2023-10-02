@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;600&display=swap');
+
+*{
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(30, 38%, 92%);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    /* height: 550px; */
+    background: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.img {
+    height: 100%;
+    width: 50%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem ;
+}
+
+.text {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+nav {
+    text-transform: uppercase;
+    margin: 2rem 2.5rem;
+    font-size: 11px;
+}
+
+header {
+    margin:0 2.5rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    padding:0 2.7rem;
+    margin-top: 2.5rem;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.9;
+    overflow: auto;
+}
+
+.price {
+    display: flex;
+    padding:0 2.7rem;
+    margin-top: 2rem;
+    
+}
+
+.one {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+
+}
+
+.two {
+    color: hsl(228, 12%, 48%);
+    margin: 0.7rem 0 0 1.5rem
+}
+
+button {
+    display: flex;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    margin:2rem auto;
+    width: 275px;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.add {
+    color: hsl(0, 0%, 100%);
+}
+
+div .add {
+    font-weight: 700;
+}
+
+svg {
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 375px){
+    body{ box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: 550px;
+        margin: 1rem;
+       
+    }
+    .img{
+        width: 100%;
+        height: 220px;
+        object-fit: fill;
+    }
+    img {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .text{ 
+        width:110% ;
+        
+
+    }
+    
+    nav{
+        margin-top: 20px;
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+    header {
+        padding-top: 10px;
+        margin-bottom: -20px;
+        font-size: 27px;
+    }
+    p {
+        margin-bottom: -25px;
+        font-size: 12px;
+    }
+    .price {
+        margin-bottom: -5px;
+
+    }
+
+}

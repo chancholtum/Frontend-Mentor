@@ -1,0 +1,177 @@
+/* 
+########### font ############################################ 
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-font weights
+default:
+400
+bold: 700
+
+-Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+########### color ############################################ 
+
+- Primary: hsl(257, 40%, 49%) hsl(300, 69%, 71%)
+- Tints:
+- Shades: 
+- Accents:
+- Greys 
+
+font-family: 'Poppins', sans-serif;
+
+font-family: 'Open Sans', sans-serif;
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: hsl(257, 40%, 49%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+
+  background-image: url(../images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  max-width: auto;
+  padding: 0 10rem;
+  margin: 0 auto;
+}
+
+/* Head */
+
+.section-logo {
+  padding: 3.2rem 0;
+  margin-bottom: 3.2rem;
+}
+.logo-img {
+  width: 24rem;
+}
+
+/* content */
+.section-content {
+  display: flex;
+  justify-content: canter;
+  align-items: center;
+  gap: 8rem;
+  width: 100%;
+
+  margin-bottom: 12rem;
+}
+.content-img-box {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.content-img {
+  width: 100%;
+}
+.content-text-box {
+  padding: 3.2rem 3.2rem 3.2rem 3.2rem;
+}
+.content-text-head {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 5.2rem;
+  font-weight: 600;
+
+  margin-bottom: 3.2rem;
+}
+.content-text-paragraph {
+  font-size: 2.4rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+.btn-register {
+  border: none;
+  background-color: #fff;
+  padding: 1.6rem 6.4rem;
+  font-size: 1.6rem;
+  color: hsl(257, 40%, 49%);
+  border-radius: 20rem;
+  cursor: pointer;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-register:hover {
+  color: #fff;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.icon-box {
+  padding: 3.2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.6rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1.2rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 38em) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    padding: 3.2rem;
+  }
+  .logo-img {
+    width: 20rem;
+  }
+  .section-content {
+    flex-direction: column;
+    gap: 3.2rem;
+    text-align: center;
+  }
+
+  .content-text-head {
+    font-size: 3.6rem;
+  }
+  .content-text-paragraph {
+    font-size: 2.4rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .btn-register {
+    width: 70%;
+  }
+
+  .icon-box {
+    justify-content: center;
+  }
+}

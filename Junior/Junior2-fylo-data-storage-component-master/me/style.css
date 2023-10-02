@@ -1,0 +1,204 @@
+/* ########### font ############################################ 
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(../fylo-data-storage-component-master/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+/*##################################
+#######  Container #################
+####################################*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2.4rem;
+  max-width: 120rem;
+  margin: 2.4rem;
+}
+
+/*##################################
+#######  Left Box #################
+####################################*/
+
+.left-box {
+  background-color: hsl(228, 56%, 26%);
+  padding: 3.6rem 12rem 3.6rem 3.6rem;
+  border-radius: 10px 100px 10px 10px;
+}
+.left-top-logo {
+  margin-bottom: 3rem;
+}
+.left-top-icons {
+  display: flex;
+  gap: 1.8rem;
+}
+.left-top-icon {
+  padding: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.upload-icon {
+  padding: 1rem;
+}
+/*##################################
+#######  Right Box #################
+####################################*/
+
+.right-box {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.right-box-box {
+  background-color: hsl(228, 56%, 26%);
+  padding: 3.6rem;
+  border-radius: 10px;
+  width: 200%;
+}
+.right-text {
+  color: hsl(243, 100%, 93%);
+  margin-bottom: 2rem;
+}
+
+.gb {
+  font-weight: 700;
+}
+.right-loading-box {
+  background-color: hsl(229, 57%, 11%);
+  height: 1.9rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: 1.2rem;
+}
+.right-loading-tab {
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  margin: 0.3rem;
+  height: 1.4rem;
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right-loading-point {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: hsl(243, 100%, 93%);
+  margin-right: 0.3rem;
+}
+.right-min-max {
+  color: hsl(243, 100%, 93%);
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/*##################################
+#######  Balloon Box #################
+####################################*/
+.right-gb-left-box {
+  background-color: #fff;
+  padding: 1rem 1.2rem;
+  width: 27%;
+  text-align: end;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 65%;
+}
+.right-gb-left-text {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.left {
+  font-size: 1rem;
+  color: hsl(229, 7%, 55%);
+  letter-spacing: 1.5px;
+  margin: auto 0;
+}
+.right-gb-left-balloon {
+  width: 0rem;
+  height: 0rem;
+  border-right: 10px solid white;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: relative;
+  /* background-color: red; */
+  top: 22px;
+  left: 101px;
+}
+
+@media (max-width: 38em) {
+  body {
+    background-image: url(../fylo-data-storage-component-master/images/bg-mobile.png);
+    background-size: cover;
+  }
+  .container {
+    margin: 4.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+  .right-text {
+    text-align: center;
+  }
+  .right-gb-left-balloon {
+    display: none;
+  }
+  .right-box-box {
+    height: 120%;
+  }
+  .right-gb-left-box {
+    top: 80%;
+    left: 25%;
+    width: 50%;
+    padding: 1.2rem 2.4rem;
+    text-align: center;
+  }
+  .left {
+    display: inline-block;
+    margin: auto 0;
+  }
+}
